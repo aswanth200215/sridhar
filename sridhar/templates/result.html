@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>skin care recommender 
+        <li>Search</li>
+    </title>
+</head>
+
+<body>
+    {% if result %}
+    <h1>Search Results</h1>
+    <p>
+        {% for result in result %}
+        <li>{{ result }}</li>
+        {% endfor %}
+    </p>
+    {% else %}
+    <h1>No results found</h1>
+    {% endif %}
+</body>
+
+</html>
